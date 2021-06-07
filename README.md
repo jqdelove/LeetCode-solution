@@ -1,5 +1,5 @@
 # LeetCode-solution
-LeetCode刷题打卡—监督自己！
+LeetCode刷题打卡—监督自己！***不懂的代码Debug一遍***
 
 Day1:  2021年5月31日
 
