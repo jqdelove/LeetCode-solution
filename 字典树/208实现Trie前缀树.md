@@ -42,7 +42,7 @@ class Trie {
         TrieNode ws = root;
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
-          	//如果字符c不存在，就创建字符c的节点
+            //如果字符c不存在，就创建字符c的节点
             if (ws.children[c - 'a'] == null) {
                 ws.children[c - 'a'] = new TrieNode(c);
             }
@@ -56,7 +56,7 @@ class Trie {
         TrieNode ws = root;
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
-          	//如果字符c不存在，返回false
+            //如果字符c不存在，返回false
             if (ws.children[c - 'a'] == null) return false;
             ws = ws.children[c - 'a'];
         }
@@ -78,11 +78,11 @@ class Trie {
 * 定义字典树的节点
 **/
 class TrieNode {
-  	//节点的值
+    //节点的值
     public char val;
-  	//是否是单词
+    //是否是单词
     public boolean isWord;
-  	//孩子节点是26个小写字母的数组
+    //孩子节点是26个小写字母的数组
     public TrieNode[] children = new TrieNode[26];
 
     public TrieNode() {
